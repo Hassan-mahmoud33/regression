@@ -8,7 +8,7 @@ def delete():
     os.system('cls' if os.name == 'nt' else 'clear')
 delete()
 
-path = r"C:\Users\B-UNIT\Desktop\ML\codes\datasets\profit\\data_single_var.txt"
+path = os.path.join("data", "data_single_var.txt")
 
 data = pd.read_csv(path , header=None , names=["population", "profit"], skipinitialspace=True)
 
